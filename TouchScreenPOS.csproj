@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>Assets\launcher.ico</ApplicationIcon>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <PackageId>TouchScreenPOS</PackageId>
+    <PackageDisplayName>Blagajna</PackageDisplayName>
+    <Publisher>CN=TouchScreenPOS Company Signing</Publisher>
+    <PublisherDisplayName>TouchScreenPOS</PublisherDisplayName>
+    <PackageVersion>1.0.2.0</PackageVersion>
+    <AppxPackageSigningEnabled>true</AppxPackageSigningEnabled>
+    <PackageCertificateThumbprint>CCBFD5C25524A5CB26A70140D182CB4A14E5121D</PackageCertificateThumbprint>
+    <GenerateAppxPackageOnBuild>false</GenerateAppxPackageOnBuild>
+    <GenerateAppInstallerFile>true</GenerateAppInstallerFile>
+    <AppInstallerUri>https://mozart.sibenik1983.hr/download/Blagajna.appinstaller</AppInstallerUri>
+    <AppInstallerCheckForUpdateFrequency>OnApplicationRun</AppInstallerCheckForUpdateFrequency>
+    <AppInstallerUpdateCheckInterval>24</AppInstallerUpdateCheckInterval>
+    <AppxPackageDir>Installer\\MSIX\\</AppxPackageDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\mozart-logo.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\launcher.png" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Assets\launcher.ico" />
+  </ItemGroup>
+
+</Project>

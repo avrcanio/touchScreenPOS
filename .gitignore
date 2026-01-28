@@ -1,0 +1,30 @@
+# Build artifacts
+bin/
+obj/
+
+# IDE
+.vs/
+.idea/
+*.user
+*.suo
+*.cache
+*.log
+
+# Local packages
+packages/
+
+# Installer/build outputs
+Installer/MSIX/*.msix
+Installer/MSIX/layout/
+Installer/MSIX/layout_sc/
+Installer/publish/
+Installer/*.msi
+Installer/*.wixpdb
+Installer/*.cab
+
+# Sensitive cert material
+Installer/Certs/*.pfx
+Installer/Certs/*.pfx.password.txt
+
+# Large local archives
+Installer.zip
